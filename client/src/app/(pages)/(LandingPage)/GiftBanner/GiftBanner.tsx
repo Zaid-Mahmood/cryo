@@ -20,7 +20,7 @@ const GiftBanner = () => {
                     </Link>
                 </div>
                 <div>
-                    <Image src={giftCard} alt="gift-card" />
+                    <Image src={giftCard} className="w-full" alt="gift-card" />
                 </div>
             </div>
         </div>

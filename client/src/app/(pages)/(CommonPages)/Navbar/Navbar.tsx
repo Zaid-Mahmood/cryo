@@ -6,6 +6,11 @@ import Link from "next/link";
 import logo from "@/assets/header-logo/logo.png";
 import downArrow from "@/assets/header-logo/down-arrow.png";
 import { usePathname } from "next/navigation";
+import linkedin from "@/assets/navbar-social-links/linkedin.png";
+import fb from "@/assets/navbar-social-links/fb.png";
+import insta from "@/assets/navbar-social-links/insta.png";
+import tiktok from "@/assets/navbar-social-links/tiktok.png";
+
 
 const navItems = [
   {
@@ -29,27 +34,27 @@ const navItems = [
       },
       {
         title: "Salt Therapy",
-        href: "#",
+        href: "salt-therapy",
       },
       {
         title: "Hyperbaric Oxygen Therapy",
-        href: "#",
+        href: "hyperbaric-oxygen-therapy",
       },
       {
         title: "IV Infusion",
-        href: "#",
+        href: "iv-infusion",
       },
       {
         title: "SCANECA 3D Body Scan",
-        href: "#",
+        href: "scaneca-body-scan",
       },
       {
         title: "Lymphatic Drainage",
-        href: "#",
+        href: "lymphatic-drainage",
       },
       {
         title: "Local Cryotherapy",
-        href: "#",
+        href: "local-cryotherapy",
       },
     ],
   },
@@ -74,11 +79,15 @@ const navItems = [
     href: "#",
   },
 ];
-
+const socialLinks = [
+  { image: linkedin, href: "https://www.linkedin.com/company/cryosubzero" },
+  { image: fb, href: "https://www.facebook.com/profile.php?id=61579179572006" },
+  { image: insta, href: "https://www.instagram.com/cryosubzero/" },
+  { image: tiktok, href: "https://www.tiktok.com/@cryosubzero2?_r=1&_t=ZS-92cqGb9uubE" },
+]
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
-  // ✅ SEPARATE STATES (IMPORTANT FIX)
   const [openServicesDesktop, setOpenServicesDesktop] = useState(false);
   const [openServicesMobile, setOpenServicesMobile] = useState(false);
 
@@ -136,8 +145,8 @@ const Navbar = () => {
                       setOpenServicesDesktop((prev) => !prev)
                     }
                     className={`inline-flex items-center gap-2 rounded-full px-2 py-1 text-base font-body transition ${isServicesActive
-                        ? "font-bold text-(--btn-bg-primary)"
-                        : "text-slate-950 hover:text-sky-600"
+                      ? "font-bold text-(--btn-bg-primary)"
+                      : "text-slate-950 hover:text-sky-600"
                       }`}
                   >
                     {item.title}
@@ -171,8 +180,8 @@ const Navbar = () => {
                               setOpenServicesDesktop(false)
                             }
                             className={`rounded-2xl px-3 py-2 w-full text-sm font-medium transition  ${isActiveLink
-                                ? "bg-slate-100 font-bold text-(--btn-bg-primary)"
-                                : "text-slate-700 hover:bg-slate-100 hover:text-slate-950"
+                              ? "bg-slate-100 font-bold text-(--btn-bg-primary)"
+                              : "text-slate-700 hover:bg-slate-100 hover:text-slate-950"
                               }`}
                           >
                             {service.title}
@@ -186,8 +195,8 @@ const Navbar = () => {
                 <Link
                   href={item.href}
                   className={`cursor-pointer rounded-full px-2 py-1 text-base transition font-body ${isActive(item.href)
-                      ? "font-bold text-(--btn-bg-primary)"
-                      : "text-(--navlink-text-black) hover:text-(--btn-bg-primary)"
+                    ? "font-bold text-(--btn-bg-primary)"
+                    : "text-(--navlink-text-black) hover:text-(--btn-bg-primary)"
                     }`}
                 >
                   {item.title}
@@ -222,7 +231,7 @@ const Navbar = () => {
 
       {/* MOBILE MENU */}
       <div
-        className={`overflow-hidden bg-white transition-all duration-300 lg:hidden ${openMenu ? "max-h-[500px]" : "max-h-0"
+        className={`overflow-hidden bg-white transition-all duration-300 lg:hidden ${openMenu ? "min-h-dvh" : "max-h-0"
           }`}
       >
         <div className="px-6 pb-6">
@@ -238,8 +247,8 @@ const Navbar = () => {
                         setOpenServicesMobile((prev) => !prev)
                       }
                       className={`flex w-full items-center justify-between px-4 py-3 text-base transition ${isServicesActive
-                          ? "font-bold text-(--btn-bg-primary)"
-                          : "text-(--navlink-text-black)"
+                        ? "font-bold text-(--btn-bg-primary)"
+                        : "text-(--navlink-text-black)"
                         }`}
                     >
                       <span>{item.title}</span>
@@ -267,8 +276,8 @@ const Navbar = () => {
                                 setOpenServicesMobile(false)
                               }
                               className={`block rounded-2xl px-3 py-2 text-sm font-medium transition ${isActiveLink
-                                  ? "bg-slate-100 font-bold text-(--btn-bg-primary)"
-                                  : "text-slate-700 hover:bg-white hover:text-slate-950"
+                                ? "bg-slate-100 font-bold text-(--btn-bg-primary)"
+                                : "text-slate-700 hover:bg-white hover:text-slate-950"
                                 }`}
                             >
                               {service.title}
@@ -282,8 +291,8 @@ const Navbar = () => {
                   <Link
                     href={item.href}
                     className={`block rounded-2xl px-4 py-3 text-base transition font-body ${isActive(item.href)
-                        ? "font-bold text-(--btn-bg-primary)"
-                        : "text-(--navlink-text-black) hover:text-(--btn-bg-primary)"
+                      ? "font-bold text-(--btn-bg-primary)"
+                      : "text-(--navlink-text-black) hover:text-(--btn-bg-primary)"
                       }`}
                   >
                     {item.title}
@@ -292,6 +301,18 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+          <div className="mt-12 flex items-center justify-center gap-4 lg:hidden">
+            {socialLinks.map((item, index) => (
+              <Link key={index} href={item.href}>
+                <Image
+                  src={item.image}
+                  alt="social-link"
+                  width={24}
+                  height={24}
+                />
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </nav>

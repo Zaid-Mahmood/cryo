@@ -70,7 +70,7 @@ const InfraredFaq = () => {
                     }))} defaultOpenIndex={0} />
                 </div>
             </div>
-            <hr className="lg:my-13 border-[var(--border-primary)]" />
+            <hr className="lg:mt-13 border-[var(--border-primary)]" />
         </div>
     );
 };

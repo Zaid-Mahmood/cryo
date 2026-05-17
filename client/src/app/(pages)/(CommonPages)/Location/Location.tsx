@@ -24,7 +24,7 @@ const Location = () => {
 
         {/* Heading */}
         <div>
-          <h2 className="hidden md:block text-left text-center font-heading font-semibold text-5xl/12  lg:pt-16 lg:pb-11">
+          <h2 className="hidden md:block text-left text-center font-heading font-semibold text-5xl/12">
             Find Us in
             <br />
             <span className="pt-2 text-[var(--btn-bg-primary)]">
@@ -76,7 +76,7 @@ const Location = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="hidden mt-8 md:flex md:flex-col md:gap-4 md:items-center  md:items-start md:text-left">
+        <div className="hidden  md:flex md:flex-col md:gap-4 md:items-center  md:items-start md:text-left">
           {contactAddress.map((item, index) => (
             <div
               key={index}

@@ -10,6 +10,7 @@ import ClientCarousalWrapper from "@/app/(pages)/(CommonPages)/ClientCarousalWra
 import { Items } from "../../../../(LandingPage)/ClientReviews/dummyUtils";
 import Faq from "./Faq/Faq";
 import Recommendation from "./Recommendation/Recommendation";
+import CommonStepText from "@/app/(pages)/(CommonPages)/CommonStepsWrapper/CommonStepText";
 const WholeBodyCryo = () => {
   return (
     <div>
@@ -37,6 +38,10 @@ const WholeBodyCryo = () => {
       />
       <Packages />
       <WhyChoose />
+      <CommonStepText
+       title='What to Expect During Your <span class="text-[var(--btn-bg-primary)]">Session</span>'
+        subtitle="A quick, guided experience designed to be safe, comfortable, and effective, with trained professionals supporting you from check-in through recovery."
+      />
       <CommonStepsWrapper
         image={middleImg}
         steps={steps}

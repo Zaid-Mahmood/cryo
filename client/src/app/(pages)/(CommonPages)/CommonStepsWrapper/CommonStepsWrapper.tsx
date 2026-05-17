@@ -16,7 +16,7 @@ const CommonStepsWrapper = ({
   steps,
 }: SessionStepsWrapperProps) => {
   return (
-    <div className='py-8 px-5 md:py-13 md:px-16'>
+    <div className='pb-8 pt-0 px-5 md:pt-11 md:pb-13 md:px-16'>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
 
         <div className="flex justify-center order-1 lg:order-2">

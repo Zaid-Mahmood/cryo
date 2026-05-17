@@ -4,7 +4,13 @@ import CommonText from "@/app/(pages)/(CommonPages)/CommonText/CommonText";
 import RedLightPackages from "./RedLightPackages/RedLightPackages";
 import WhyChooseRedLight from "./WhyChooseRedLight/WhyChooseRedLight";
 import CommonStepsWrapper from "@/app/(pages)/(CommonPages)/CommonStepsWrapper/CommonStepsWrapper";
-import {steps , middleImg} from "./dummyutils";
+import { steps, middleImg } from "./dummyutils";
+import ClientCarousalWrapper from "@/app/(pages)/(CommonPages)/ClientCarousalWrapper/ClientCarousalWrapper";
+import { Items } from "../../../../(LandingPage)/ClientReviews/dummyUtils";
+import RedLightTherapyFaq from "./RedLightTherapyFaq/RedLightTherapyFaq";
+import CommonDiscountBanner from "@/app/(pages)/(CommonPages)/CommonDiscountBanner/CommonDiscountBanner";
+import RedLightRecommendation from "./RedLightRecommendation/RedLightRecommendation";
+import CommonStepText from "@/app/(pages)/(CommonPages)/CommonStepsWrapper/CommonStepText";
 const RedLightTherapy = () => {
     return (
         <div>
@@ -29,12 +35,31 @@ const RedLightTherapy = () => {
                 align="center"
                 line
             />
-            <RedLightPackages/>
-            <WhyChooseRedLight/>
-            <CommonStepsWrapper
-        image={middleImg}
-        steps={steps}
+            <RedLightPackages />
+            <WhyChooseRedLight />
+             <CommonStepText
+        title='What to Expect During Your <span class="text-[var(--btn-bg-primary)]">Session</span>'
+        subtitle="A gentle, non-invasive light therapy that supports recovery, reduces inflammation, and improves skin health. The treatment works passively while you relax under targeted red  light."
       />
+            <CommonStepsWrapper
+                image={middleImg}
+                steps={steps}
+            />
+            <ClientCarousalWrapper items={Items} />
+            <CommonDiscountBanner
+                heading={
+                    <>
+                        Save Up to <span className="font-bold">30%</span> with Membership
+                    </>
+                }
+                description="Unlock consistent recovery with flexible membership options designed to help you save more, stay consistent, and get better results over time."
+                href="#"
+                buttonText="Become a Member" />
+            <div className="pt-13 lg:pt-26">
+                <RedLightTherapyFaq />
+                <RedLightRecommendation />
+            </div>
+
         </div>
     )
 }

@@ -34,14 +34,14 @@ const CommonText = ({
           className={`${isLeft ? "md:text-left text-center md:max-w-[55%] w-full" : "text-center w-full"
             }`}
         >
-          <p className={`font-body ${isLeft ? "text-center w-full" : "text-center"} text-[var(--text-secondary)] text-base pb-6 md:pb-12`}>
+          <p className={`font-body ${isLeft ? "text-center w-full" : "text-center"} text-[var(--text-secondary)] text-base pb-6 md:pb-0`}>
             {subtitle}
           </p>
 
           {buttonText && (
             <Link
               href={buttonHref}
-              className="w-[160px] inline-flex rounded-lg bg-[var(--btn-bg-black)] px-11 py-3 font-body text-base font-semibold text-white transition hover:bg-black"
+              className="w-[160px] inline-flex rounded-lg bg-[var(--btn-bg-black)] px-11 py-3 font-body text-base font-semibold text-white transition hover:bg-black mb-6 md:mb-0"
             >
               {buttonText}
             </Link>
@@ -49,7 +49,7 @@ const CommonText = ({
         </div>
       </div>
       {line && (
-        <hr className="mt-8 md:mt-13 border-slate-200" />
+        <hr className="mt-2 md:mt-13 border-slate-200" />
       )}
     </section>
   );
