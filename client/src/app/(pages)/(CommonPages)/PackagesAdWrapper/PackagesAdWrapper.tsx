@@ -33,16 +33,16 @@ const PackagesAdWrapper = ({
           />
         </div>
 
-        <div className="font-body flex  flex-col items-start px-8 py-4">
-          <p className="py-1 px-[10px]  text-[13px] font-bold text-[var(--btn-bg-primary)] bg-[var(--bg-primary)]">
+        <div className="font-body flex flex-col md:items-start items-center py-4">
+          <p className="py-1 px-1 md:text-left text-center md:px-[10px]  text-[13px] font-bold text-[var(--btn-bg-primary)] bg-[var(--bg-primary)]">
             {tag}
           </p>
 
-          <h3 className="mt-3 mb-2 text-xl font-semibold text-[#2C2C2C]">
+          <h3 className="text-center md:text-left mt-3 mb-2 text-xl font-semibold text-[#2C2C2C]">
             {title}
           </h3>
 
-          <p className="mb-6 text-base text-[var(--text-secondary)]">
+          <p className="mb-6 text-base text-[var(--text-secondary)] md:text-left text-center">
             {description}
           </p>
 
@@ -56,7 +56,7 @@ const PackagesAdWrapper = ({
 
           <Link
             href={buttonHref}
-            className="inline-flex w-fit items-center gap-2 rounded-lg bg-[var(--btn-bg-primary)] px-6 py-4 font-body md:text-base text-sm font-semibold text-white transition hover:bg-[var(--hover-bg-primary)]"
+            className="justify-center inline-flex w-full md:w-fit items-center gap-2 rounded-lg bg-[var(--btn-bg-primary)] px-6 py-4 font-body md:text-base text-sm font-semibold text-white transition hover:bg-[var(--hover-bg-primary)]"
           >
             {buttonText}
             <Image src={rightArrow} alt = "right-arrow" />

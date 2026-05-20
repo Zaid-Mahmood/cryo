@@ -6,6 +6,9 @@ import cardImg5 from "@/assets/packages/cardImg5.png";
 import singleShared1 from "@/assets/packages/single-1.png";
 import singleShared2 from "@/assets/packages/single-2.png";
 import singleShared3 from "@/assets/packages/single-3.png";
+import singleShared4 from "@/assets/packages/single-4.png";
+import singleShared5 from "@/assets/packages/single-5.png";
+
 import familyImg from "@/assets/packages/family-pkg-1.png";
 
 export const comboPackages = [
@@ -105,6 +108,26 @@ export const togetherPackages = [
                 duration: "30mins",
                 linkName: "Book Now",
                 linkhref: "#"
+            },
+            ,
+            {
+                id: 4,
+                title: "Salt Therapy - (Couple / Friend)",
+                price: "A$70",
+                image: singleShared4,
+                duration: "45mins",
+                linkName: "Book Now",
+                linkhref: "#"
+            } ,
+            ,
+            {
+                id: 5,
+                title: "Infrared Sauna - (Couple / Friend)",
+                price: "A$90",
+                image: singleShared4,
+                duration: "45mins",
+                linkName: "Book Now",
+                linkhref: "#"
             }
         ]
     },
@@ -144,6 +167,19 @@ export const togetherPackages = [
                 oldPrice: "A$145",
                 save: "Save 18%",
                 desc: "Immune boost, skin vitality and respiratory rejuvenation",
+                image: cardImg3,
+                duration: "45mins",
+                linkName: "Book Now",
+                linkhref: "#"
+            },
+             {
+                id: 4,
+                tag: "Salt Therapy + Infrared Sauna",
+                title: "Salt & Heat",
+                price: "A$130",
+                oldPrice: "A$160",
+                save: "Save 19%",
+                desc: "Breathe easier, detoxify, and recharge your body",
                 image: cardImg3,
                 duration: "45mins",
                 linkName: "Book Now",

@@ -68,7 +68,7 @@ const navItems = [
   },
   {
     title: "Gift Cards",
-    href: "#",
+    href: "/gift-cards",
   },
   {
     title: "Blog",
