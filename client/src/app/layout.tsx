@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Urbanist, Inter } from "next/font/google";
 import "./globals.css";
-
+import MainLayout from "./(main)/MainLayout";
 const headingFont = Urbanist({
   subsets: ["latin"],
   variable: "--font-heading",
@@ -25,7 +25,11 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${headingFont.variable} ${bodyFont.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <MainLayout>
+          {children}
+        </MainLayout>
+      </body>
     </html>
   );
 }

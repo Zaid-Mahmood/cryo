@@ -39,3 +39,6 @@
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
 }
+.ds{
+  margin-bottom: 12px;
+}

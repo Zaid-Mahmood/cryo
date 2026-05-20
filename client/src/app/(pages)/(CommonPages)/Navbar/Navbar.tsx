@@ -30,41 +30,41 @@ const navItems = [
       },
       {
         title: "Red Light Therapy",
-        href: "red-light-therapy",
+        href: "/services/red-light-therapy",
       },
       {
         title: "Salt Therapy",
-        href: "salt-therapy",
+        href: "/services/salt-therapy",
       },
       {
         title: "Hyperbaric Oxygen Therapy",
-        href: "hyperbaric-oxygen-therapy",
+        href: "/services/hyperbaric-oxygen-therapy",
       },
       {
         title: "IV Infusion",
-        href: "iv-infusion",
+        href: "/services/iv-infusion",
       },
       {
         title: "SCANECA 3D Body Scan",
-        href: "scaneca-body-scan",
+        href: "/services/scaneca-body-scan",
       },
       {
         title: "Lymphatic Drainage",
-        href: "lymphatic-drainage",
+        href: "/services/lymphatic-drainage",
       },
       {
         title: "Local Cryotherapy",
-        href: "local-cryotherapy",
+        href: "/services/local-cryotherapy",
       },
     ],
   },
   {
     title: "Membership",
-    href: "#",
+    href: "/membership",
   },
   {
     title: "Packages",
-    href: "#",
+    href: "/packages",
   },
   {
     title: "Gift Cards",
@@ -122,7 +122,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="hidden md:block">
           <Link href="/">
-            <Image src={logo} alt="logo" width={140} height={40} priority />
+            <Image src={logo} alt="logo" width={105} height={60} priority />
           </Link>
         </div>
         <div className="block md:hidden">

@@ -38,7 +38,7 @@ const contactItems = [
     },
     {
         icon: time,
-        label: "Mon-Fri: 9am-5pm\nSun: 9am-3pm\nSat: Closed",
+        label: "Mon-Fri: 8:30am-6:30pm\nSat-Sun: 9am-3pm",
     },
     {
         icon: phone,
@@ -139,7 +139,7 @@ const Footer = () => {
                                 <li key={item}>
                                     <Link
                                         href="#"
-                                        className="font-body text-sm lg:text-base text-white/85 transition hover:text-white"
+                                        className="font-body text-sm lg:text-[15px] text-center text-white/85 transition hover:text-white"
                                     >
                                         {item}
                                     </Link>
@@ -155,7 +155,7 @@ const Footer = () => {
                                 <li key={item}>
                                     <Link
                                         href="#"
-                                        className="font-body text-sm lg:text-base text-white/85 transition hover:text-white"
+                                        className="font-body text-sm lg:text-[15px] text-white/85 transition hover:text-white"
                                     >
                                         {item}
                                     </Link>
@@ -176,7 +176,7 @@ const Footer = () => {
                                         height={18}
                                         className="mt-0.5 h-[18px] w-[18px] object-contain"
                                     />
-                                    <span className="whitespace-pre-line leading-5 font-body text-sm lg:text-base lg:text-left text-center text-white/85 transition hover:text-white">
+                                    <span className="whitespace-pre-line leading-5 font-body text-sm lg:text-[15px] lg:text-left text-center text-white/85 transition hover:text-white">
                                         {item.label}
                                     </span>
                                 </li>

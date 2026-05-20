@@ -14,7 +14,7 @@ interface BannerButton {
 interface CommonBannerProps {
     image: StaticImageData;
     mobileImage?: StaticImageData;
-    title: string;
+    title: string | React.ReactNode;
     description?: string;
     buttons?: BannerButton[];
     align?: "left" | "center";

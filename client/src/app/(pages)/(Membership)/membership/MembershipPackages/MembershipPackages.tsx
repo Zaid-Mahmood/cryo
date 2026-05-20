@@ -1,9 +1,8 @@
+import CommonMembershipPage from "@/app/(pages)/(CommonPages)/CommonMembershipPage/CommonMembershipPage"
+import { memberPkgs } from "./dummyutils";
 import Image from "next/image";
 import checkImg from "@/assets/membership-img/check.png";
-import { memberCards } from "./dummyutils";
-import CommonMembershipPage from "../../(CommonPages)/CommonMembershipPage/CommonMembershipPage";
-const Memberships = () => {
-
+const MembershipPackages = () => {
   const highlightPlanText = (title: string) => {
     if (title.startsWith("All ")) {
       const planName = title.replace("All ", "").replace(" treatments", "");
@@ -31,16 +30,13 @@ const Memberships = () => {
 
     return "text-[var(--btn-bg-primary)]  bg-[#F2F7FD] px-[10px] py-1 rounded-md";
   };
-
   return (
-     <CommonMembershipPage 
-     title="Membership"
-     >
+    <CommonMembershipPage title="Membership Overview" description="Our memberships are designed to make consistent recovery and wellness more accessible, flexible, and cost-effective. Whether you’re focused on performance, recovery, or overall wellbeing, each plan gives you ongoing access to treatments that help you feel and perform at your best.">
       <div className="grid overflow-hidden border border-[var(--border-primary)] md:grid-cols-3">
-        {memberCards.map((card, index) => (
+        {memberPkgs.map((card, index) => (
           <div
             key={card.heading}
-            className={`flex flex-col px-4 py-3 md:px-5 ${index !== memberCards.length - 1
+            className={`flex flex-col px-4 py-3 md:px-5 ${index !== memberPkgs.length - 1
               ? "border-b border-[var(--border-primary)] md:border-b-0 md:border-r"
               : ""
               }`}
@@ -52,7 +48,28 @@ const Memberships = () => {
                     <h3 className="font-body text-lg font-semibold text-[var(--btn-bg-black)]">
                       {card.heading}
                     </h3>
-                    <Image src={card.img} alt="info-img" />
+
+                    <div className="relative group">
+                      <Image
+                        src={card.img}
+                        alt="info-img"
+                        className="cursor-pointer"
+                      />
+
+                      {/* Tooltip */}
+                      <div
+                        className="absolute left-1/2 top-[140%] -translate-x-1/2 w-[260px] rounded-md border border-[#1DA1F2] bg-[#0B0F19] px-4 py-3 text-xs leading-5 text-white
+opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible z-50" >
+                        Limited membership spots available. Fair-use policy applies.
+                        Optional partner rates on available on eligible plans.
+
+                        {/* Arrow */}
+                        <div
+                          className="absolute left-1/2 top-0 h-3 w-3 -translate-x-1/2 -translate-y-1/2
+          rotate-45 border-l border-t border-[#1DA1F2] bg-[#0B0F19]"
+                        />
+                      </div>
+                    </div>
                   </div>
 
                   <p className="mt-2 max-w-[280px] font-body text-xs leading-relaxed text-[var(--text-description)]">
@@ -127,7 +144,7 @@ const Memberships = () => {
         ))}
       </div>
     </CommonMembershipPage>
-  );
-};
+  )
+}
 
-export default Memberships;
+export default MembershipPackages

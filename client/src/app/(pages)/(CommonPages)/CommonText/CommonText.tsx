@@ -34,7 +34,7 @@ const CommonText = ({
           className={`${isLeft ? "md:text-left text-center md:max-w-[55%] w-full" : "text-center w-full"
             }`}
         >
-          <p className={`font-body ${isLeft ? "text-center w-full" : "text-center"} text-[var(--text-secondary)] text-base pb-6 md:pb-0`}>
+          <p className={`font-body ${isLeft ? "text-center w-full md:pb-[46px]" : "text-center md:pb-0"} text-[var(--text-secondary)] text-base pb-6`}>
             {subtitle}
           </p>
 
@@ -46,8 +46,8 @@ const CommonText = ({
               {buttonText}
             </Link>
           )}
+          </div>
         </div>
-      </div>
       {line && (
         <hr className="mt-2 md:mt-13 border-slate-200" />
       )}
