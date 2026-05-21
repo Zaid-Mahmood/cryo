@@ -72,11 +72,11 @@ const navItems = [
   },
   {
     title: "Blog",
-    href: "#",
+    href: "/blog",
   },
   {
     title: "Contact Us",
-    href: "#",
+    href: "/contact-us",
   },
 ];
 const socialLinks = [

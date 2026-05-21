@@ -75,7 +75,7 @@ const FamilyPackageCard = ({ item, heading }: any) => {
                             alt="arrow right"
                             width={14}
                             height={14}
-                           className="brightness-0 invert"
+                            className="brightness-0 invert"
                         />
                     </Link>
                 </div>
