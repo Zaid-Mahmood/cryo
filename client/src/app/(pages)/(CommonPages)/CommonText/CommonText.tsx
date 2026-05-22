@@ -4,7 +4,7 @@ interface TextProps {
   buttonText?: string;
   buttonHref?: string;
   align?: "left" | "center";
-  line: boolean
+  line?: boolean
 }
 
 import Link from "next/link";
@@ -46,8 +46,8 @@ const CommonText = ({
               {buttonText}
             </Link>
           )}
-          </div>
         </div>
+      </div>
       {line && (
         <hr className="mt-2 md:mt-13 border-slate-200" />
       )}

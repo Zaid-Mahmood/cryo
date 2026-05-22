@@ -11,49 +11,116 @@ import Image from "next/image";
 import Link from "next/link";
 
 const services = [
-    "Cryotherapy",
-    "HBOT",
-    "Infrared Sauna",
-    "Red Light Therapy",
-    "Salt Therapy",
-    "IV Infusions",
-    "Lymphatic Drainage",
-    "Scenar & 3D Scan",
-    "Local Cryotherapy",
+  {
+    label: "Cryotherapy",
+    href: "/services/whole-body-cryotherapy",
+  },
+  {
+    label: "HBOT",
+    href: "/services/hyperbaric-oxygen-therapy",
+  },
+  {
+    label: "Infrared Sauna",
+    href: "/services/infrared-sauna",
+  },
+  {
+    label: "Red Light Therapy",
+    href: "/services/red-light-therapy",
+  },
+  {
+    label: "Salt Therapy",
+    href: "/services/salt-therapy",
+  },
+  {
+    label: "IV Infusions",
+    href: "/services/iv-infusion",
+  },
+  {
+    label: "Lymphatic Drainage",
+    href: "/services/lymphatic-drainage",
+  },
+  {
+    label: "Scaneca 3D Scan",
+    href: "/services/scaneca-body-scan",
+  },
+  {
+    label: "Local Cryotherapy",
+    href: "/services/local-cryotherapy",
+  },
 ];
 
-const resources = ["Blog", "About Us", "Memberships", "Packages", "Gift Cards"];
+const resources = [
+  {
+    label: "Blog",
+    href: "/blog",
+  },
+  {
+    label: "About Us",
+    href: "/about-us",
+  },
+  {
+    label: "Membership",
+    href: "/membership",
+  },
+  {
+    label: "Packages",
+    href: "/packages",
+  },
+  {
+    label: "Gift Cards",
+    href: "/gift-cards",
+  },
+];
 
 const socials = [
-    { icon: fblogo, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61579179572006" },
-    { icon: instalogo, label: "Instagram", href: "https://www.instagram.com/cryosubzero/" },
-    { icon: linked, label: "LinkedIn", href: "https://www.linkedin.com/company/cryosubzero" },
-    { icon: tiktok, label: "TikTok", href: "https://www.tiktok.com/@cryosubzero2?_r=1&_t=ZS-92cqGb9uubE" },
+  {
+    icon: fblogo,
+    label: "Facebook",
+    href: "https://www.facebook.com/profile.php?id=61579179572006",
+  },
+  {
+    icon: instalogo,
+    label: "Instagram",
+    href: "https://www.instagram.com/cryosubzero/",
+  },
+  {
+    icon: linked,
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/cryosubzero",
+  },
+  {
+    icon: tiktok,
+    label: "TikTok",
+    href: "https://www.tiktok.com/@cryosubzero2?_r=1&_t=ZS-92cqGb9uubE",
+  },
 ];
 
 const contactItems = [
-    {
-        icon: location,
-        label: "Level 1, 284 Bay Road, Cheltenham VIC 3192",
-    },
-    {
-        icon: time,
-        label: "Mon-Fri: 8:30am-6:30pm\nSat-Sun: 9am-3pm",
-    },
-    {
-        icon: phone,
-        label: "03 9022 6606",
-    },
-    {
-        icon: mail,
-        label: "info@cryosubzero.com",
-    },
+  {
+    icon: location,
+    label: "Level 1, 284 Bay Road, Cheltenham VIC 3192",
+    href: "https://www.google.com/maps?q=Level%201,%20284%20Bay%20Road,%20Cheltenham%20VIC%203192",
+  },
+  {
+    icon: time,
+    label: "Mon-Fri: 8:30am-6:30pm\nSat-Sun: 9am-3pm",
+    href: "#",
+  },
+  {
+    icon: phone,
+    label: "03 9022 6606",
+    href: "tel:0390226606",
+  },
+  {
+    icon: mail,
+    label: "info@cryosubzero.com",
+    href: "mailto:info@cryosubzero.com",
+  },
 ];
-
 const Footer = () => {
     return (
         <footer className="w-full bg-[var(--footer-bg-blue)] px-5 py-6 text-white lg:py-13 lg:px-16">
-            <div className="mx-auto max-w-[1440px]">
+            <div>
                 <div className="flex flex-col items-center gap-5 border-b border-white/15 pb-7 lg:flex-row lg:items-center lg:justify-between">
                     <div className="text-center lg:text-left">
                         <h2 className="font-heading text-2xl font-bold leading-tight lg:text-3xl">
@@ -66,15 +133,15 @@ const Footer = () => {
 
                     <form className="grid grid-cols-3 lg:flex lg:flex-row lg:w-full lg:max-w-[760px] flex-col gap-3 sm:flex-row">
                         {/* <div className="hidden lg:block"> */}
-                            <label htmlFor="footer-email" className="sr-only hidden lg:block">
-                                Enter your email
-                            </label>
-                            <input
-                                id="footer-email"
-                                type="email"
-                                placeholder="Enter Your Email"
-                                className="h-12 w-full lg:min-w-0 flex-1 rounded-full bg-white px-6 font-body text-sm text-slate-950 outline-none placeholder:text-[#9C9C9C] hidden lg:block"
-                            />
+                        <label htmlFor="footer-email" className="sr-only hidden lg:block">
+                            Enter your email
+                        </label>
+                        <input
+                            id="footer-email"
+                            type="email"
+                            placeholder="Enter Your Email"
+                            className="h-12 w-full lg:min-w-0 flex-1 rounded-full bg-white px-6 font-body text-sm text-slate-950 outline-none placeholder:text-[#9C9C9C] hidden lg:block"
+                        />
                         {/* </div> */}
                         <div className="col-span-2 lg:hidden">
                             <label htmlFor="footer-email" className="sr-only">
@@ -135,13 +202,13 @@ const Footer = () => {
                     <div>
                         <h3 className="font-body text-base lg:text-xl font-medium lg:text-left text-center">Services</h3>
                         <ul className="mt-3 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-3  lg:text-left text-center">
-                            {services.map((item) => (
-                                <li key={item}>
+                            {services.map((item , id) => (
+                                <li key={id}>
                                     <Link
-                                        href="#"
-                                        className="font-body text-sm lg:text-[15px] text-center text-white/85 transition hover:text-white"
+                                        href={item.href}
+                                        className="font-body text-sm lg:text-[15px] text-center text-white/85 transition hover:text-white cursor-pointer"
                                     >
-                                        {item}
+                                        {item.label}
                                     </Link>
                                 </li>
                             ))}
@@ -151,13 +218,13 @@ const Footer = () => {
                     <div>
                         <h3 className="font-body text-base lg:text-xl font-medium  lg:text-left text-center">Resources</h3>
                         <ul className="mt-3 space-y-3  lg:text-left text-center">
-                            {resources.map((item) => (
-                                <li key={item}>
+                            {resources.map((item , id) => (
+                                <li key={id}>
                                     <Link
-                                        href="#"
-                                        className="font-body text-sm lg:text-[15px] text-white/85 transition hover:text-white"
+                                        href={item.href}
+                                        className="font-body text-sm lg:text-[15px] text-white/85 transition hover:text-white cursor-pointer"
                                     >
-                                        {item}
+                                        {item.label}
                                     </Link>
                                 </li>
                             ))}
@@ -167,8 +234,8 @@ const Footer = () => {
                     <div>
                         <h3 className="font-body text-base lg:text-xl font-medium  lg:text-left text-center">Contact Us</h3>
                         <ul className="mt-3 space-y-3">
-                            {contactItems.map((item) => (
-                                <li key={item.label} className="flex lg:items-start items-center justify-center lg:justify-start gap-3">
+                            {contactItems.map((item , id) => (
+                                <li key={id} className="flex lg:items-start items-center justify-center lg:justify-start gap-3 cursor-pointer">
                                     <Image
                                         src={item.icon}
                                         alt=""
@@ -176,9 +243,9 @@ const Footer = () => {
                                         height={18}
                                         className="mt-0.5 h-[18px] w-[18px] object-contain"
                                     />
-                                    <span className="whitespace-pre-line leading-5 font-body text-sm lg:text-[15px] lg:text-left text-center text-white/85 transition hover:text-white">
+                                    <Link href={item.href} className="whitespace-pre-line leading-5 font-body text-sm lg:text-[15px] lg:text-left text-center text-white/85 transition hover:text-white">
                                         {item.label}
-                                    </span>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>

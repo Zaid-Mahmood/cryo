@@ -8,6 +8,7 @@ import cryoIcon from "@/assets/blog/cryo-icon.png";
 import rightArrow from "@/assets/services/right-arrow.png";
 import BlogCards from "./BlogCards/BlogCards";
 import { useState } from "react";
+import Link from "next/link";
 const BlogBanner = () => {
   const [selectedTab, setSelectedTab] = useState("All");
   const categories = ["All"];
@@ -28,7 +29,7 @@ const BlogBanner = () => {
           className="absolute left-0 top-0 h-full w-auto object-cover"
         />
         {/* Content */}
-        <div className="relative top-[40%] -translate-y-[40%]  flex  flex-col items-center justify-center text-center px-4">
+        <div className="relative top-[80%] -translate-y-[80%] md:top-[40%] md:-translate-y-[40%]  flex  flex-col items-center justify-center text-center px-4">
           <h1 className="font-heading text-[30px] sm:text-6xl leading-[1.3] font-bold text-[#2C2C2C]">
             Insights for Better <br /> Recovery
           </h1>
@@ -70,23 +71,32 @@ const BlogBanner = () => {
           className="h-auto object-contain"
         />
         <p className="text-[#2680D9] md:hidden py-3  text-center">Modality Deep Dive</p>
-            <div>
-        <h4 className="font-heading text-3xl font-medium text-center md:text-left">What Actually Happens When You Step Into the Cold</h4>
-        <p className="text-base font-body text-[#888888]  text-center md:text-left">Two to three minutes at subzero temperatures. The science behind why it works, who it’s for, what to expect, and what the research actually shows.</p>
-        <p className="hidden md:text-[#2680D9]">Modality Deep Dive</p>
-        <div className="flex items-center gap-2 py-6 md:pt-8 md:pb-14 justify-center md:justify-between">
-          <Image src={cryoIcon} alt="cryo-icon" />
-          <div className="md:flex-1">
-            <h2 className="text-base font-medium">Cryo SubZero</h2>
-            <p className="text-sm font-body text-[var(--text-description)]">03 April 2026 • 4 min read</p>
+        <div>
+          <h4 className="font-heading text-3xl font-medium text-center md:text-left">What Actually Happens When You Step Into the Cold</h4>
+          <p className="text-base font-body text-[#888888]  text-center md:text-left">Two to three minutes at subzero temperatures. The science behind why it works, who it’s for, what to expect, and what the research actually shows.</p>
+          <p className="hidden md:text-[#2680D9]">Modality Deep Dive</p>
+          <div className="flex items-center gap-2 py-6 md:pt-8 md:pb-14 justify-center md:justify-between">
+            <Image src={cryoIcon} alt="cryo-icon" />
+            <div className="md:flex-1">
+              <h2 className="text-base font-medium">Cryo SubZero</h2>
+              <p className="text-sm font-body text-[var(--text-description)]">03 April 2026 • 4 min read</p>
+            </div>
           </div>
-        </div>
-        <button
-          className="cursor-pointer text-white bg-[var(--btn-bg-black)] w-full md:w-[160px]  px-5 py-4  flex items-center justify-center rounded-xl gap-2"
-        >
-          <p> Read More</p>
-          <Image src={rightArrow} alt="right arrow" width={14} height={14} />
-        </button>
+       
+
+            <Link
+              href="/blog/whole-body-cryotherapy"
+              className="cursor-pointer text-white bg-[var(--btn-bg-black)] w-full md:w-[160px] px-5 py-4 flex items-center justify-center rounded-xl gap-2"
+            >
+              <p>Read More</p>
+
+              <Image
+                src={rightArrow}
+                alt="right arrow"
+                width={14}
+                height={14}
+              />
+            </Link>
         </div>
       </div>
       <BlogCards selectedTab={selectedTab} />

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { cards } from "./dummyutils";
-
+import Link from "next/link";
 const BlogCards = ({ selectedTab }: { selectedTab: string }) => {
     const CARDS_PER_PAGE = 6;
 
@@ -66,10 +66,11 @@ const BlogCards = ({ selectedTab }: { selectedTab: string }) => {
                                 ))}
                             </div>
 
-                            <h3 className="md:text-left text-center text-2xl font-bold text-[#2C2C2C]">
-                                {truncateText(card.heading, 55)}
-                            </h3>
-
+                            <Link href="/blog/whole-body-cryotherapy">
+                                <h3 className="md:text-left text-center text-2xl font-bold text-[#2C2C2C] hover:text-[#007AD8] transition cursor-pointer">
+                                    {truncateText(card.heading, 55)}
+                                </h3>
+                            </Link>
                             <p className="md:text-left text-center mt-3 text-[#666666] text-base">
                                 {truncateText(card.desc, 90)}
                             </p>
