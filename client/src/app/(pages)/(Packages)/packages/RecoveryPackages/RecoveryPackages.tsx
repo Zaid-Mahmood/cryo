@@ -3,7 +3,7 @@
 import { useState } from "react";
 import RecoveryComboCarousel from "./RecoveryComboCarousel";
 import PackageCard from "./PackageCard";
-import { comboPackages, togetherPackages } from "./dummyUtils";
+import { comboPackages, togetherPackages } from "./dummyUtils.js";
 import FamilyPackageCard from "./FamilyPackageCard";
 
 const RecoveryPackages = () => {
