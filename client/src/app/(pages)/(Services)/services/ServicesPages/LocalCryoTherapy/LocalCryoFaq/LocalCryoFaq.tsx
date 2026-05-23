@@ -11,35 +11,30 @@ const LocalCryoFaq = () => {
     ];
      const faqData = [
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "How is local cryotherapy different from whole body cryotherapy?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Local cryotherapy targets one specific area, such as the knee, shoulder, back or ankle.Whole body cryotherapy exposes the body more generally for overall recovery support.",
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "Is local cryotherapy useful for targeted soreness?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Yes, local cryotherapy may support comfort in a specific sore or overworked area. It is often chosen when clients want focused cold therapy rather than a full-body session.",
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "What should I wear for local cryotherapy?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Wear clothing that allows easy access to the treatment area. For example, shorts may be suitable for knees or ankles, while a loose top may help for shoulders.",
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "Can local cryotherapy be used after sport?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Many clients use local cryotherapy after sport for targeted recovery support. If you have a serious injury or ongoing pain, medical advice is recommended first.",
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "Where can I book local cryotherapy near me?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
-        },
-        {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
-            answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
-        },
+                "Cryo SubZero provides local cryotherapy in Cheltenham, VIC. It is ideal for clients searching for targeted cold therapy near Bayside Melbourne.",
+        }
     ];
   return (
   <div className="px-5 pb-8 md:px-16 md:pb-13">
@@ -47,7 +42,7 @@ const LocalCryoFaq = () => {
                 Frequently{" "}
                 <span className="text-[var(--btn-bg-primary)]">Asked</span> Questions
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-11 lg:place-items-center">
+            <div className="grid md:grid-cols-2 gap-x-11 lg:place-items-center">
                 <div className="order-2  mt-6 lg:mt-0 lg:col-span-1 lg:order-1">
                     <h2 className="hidden lg:block font-heading font-semibold text-5xl/12 pt-16 pb-11">
                         Frequently{" "}
@@ -65,7 +60,7 @@ const LocalCryoFaq = () => {
                     </div>
                 </div>
 
-                <div className="order-1  lg:col-span-2 lg:order-2">
+                <div className="order-1 lg:order-2">
                     <CommonAccordion items={faqData.map((item) => ({
                         title: item.question,
                         content: item.answer,

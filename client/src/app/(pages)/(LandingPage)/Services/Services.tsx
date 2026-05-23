@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Img3 from "@/assets/services/img1.png";
@@ -10,6 +10,10 @@ import rightArrow from "@/assets/services/right-arrow.png";
 import linkArrow from "@/assets/services/link-arrow.png";
 
 const Services = () => {
+    const [isMobile, setIsMobile] = useState<boolean>(false);
+   const touchStartX = useRef(0);
+    const touchEndX = useRef(0);
+   
     const reviews = [
         {
             cardHeading: "Whole Body Cryotherapy",
@@ -69,7 +73,6 @@ const Services = () => {
     ];
 
     const [index, setIndex] = useState<number>(0);
-    const [isMobile, setIsMobile] = useState<boolean>(false);
 
     useEffect(() => {
         const handleResize = () => {
@@ -94,7 +97,21 @@ const Services = () => {
             setIndex((prev) => prev - 1);
         }
     };
+  const handleTouchStart = (e: React.TouchEvent) => {
+        touchStartX.current = e.changedTouches[0].screenX;
+    };
 
+    const handleTouchEnd = (e: React.TouchEvent) => {
+        touchEndX.current = e.changedTouches[0].screenX;
+
+        if (touchStartX.current - touchEndX.current > 50) {
+            next();
+        }
+
+        if (touchEndX.current - touchStartX.current > 50) {
+            prev();
+        }
+    };
     return (
         <div className="lg:pb-13 pb-8">
             <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-16 gap-4">
@@ -141,7 +158,9 @@ const Services = () => {
                 </div>
             </div>
 
-            <div className="mt-6 lg:mt-11 overflow-hidden px-4 md:pl-16 md:pr-0">
+            <div className="mt-6 lg:mt-11 overflow-hidden px-4 md:pl-16 md:pr-0"
+                onTouchStart={handleTouchStart}
+                onTouchEnd={handleTouchEnd}>
                 <div
                     className="flex gap-4 md:gap-6 transition-transform duration-500"
                     style={{

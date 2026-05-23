@@ -10,35 +10,31 @@ const LymphaticDrainageFaq = () => {
     ];
      const faqData = [
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "What does lymphatic drainage compression feel like?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Lymphatic drainage compression feels like gentle pressure and release around the legs.Many clients describe it as relaxing, comfortable and helpful for tired legs.",
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "Is lymphatic drainage good after gym or sport?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Yes, many active clients use lymphatic drainage after gym, running or sport. It may help support circulation, recovery and relief from heavy-feeling legs.",
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "What should I wear for lymphatic drainage therapy?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Wear comfortable activewear, leggings or fitted clothing for your session. This helps the compression boots fit properly and keeps you comfortable.",
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "Can lymphatic drainage help with heavy legs?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Many clients book lymphatic drainage when their legs feel tired, heavy or overworked. If swelling is sudden, painful or one-sided, seek medical advice before treatment.",
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "Where can I find lymphatic drainage near Cheltenham?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Cryo SubZero offers lymphatic drainage therapy in Cheltenham, VIC. It is a convenient recovery option for clients near Bayside, Highett, Mentone and Moorabbin.",
         },
-        {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
-            answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
-        },
+        
     ];
   return (
     <div className="px-5 pb-8 md:px-16 md:pb-13">
@@ -46,7 +42,7 @@ const LymphaticDrainageFaq = () => {
                 Frequently{" "}
                 <span className="text-[var(--btn-bg-primary)]">Asked</span> Questions
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-11 lg:place-items-center">
+            <div className="grid md:grid-cols-2  gap-x-11 lg:place-items-center">
                 <div className="order-2  mt-6 lg:mt-0 lg:col-span-1 lg:order-1">
                     <h2 className="hidden lg:block font-heading font-semibold text-5xl/12 pt-16 pb-11">
                         Frequently{" "}
@@ -64,7 +60,7 @@ const LymphaticDrainageFaq = () => {
                     </div>
                 </div>
 
-                <div className="order-1  lg:col-span-2 lg:order-2">
+                <div className="order-1 lg:order-2">
                     <CommonAccordion items={faqData.map((item) => ({
                         title: item.question,
                         content: item.answer,

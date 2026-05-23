@@ -17,7 +17,7 @@ const HyperBaricOxygenTherapy = () => {
             <CommonBanner
                 image={bannerImg}
                 mobileImage={bannerImg}
-                title="Salt Therapy"
+                title="Hyperbaric Oxygen Therapy"
                 align="center"
                 buttons={[
                     {

@@ -66,7 +66,7 @@ const Faq = () => {
                 Frequently{" "}
                 <span className="text-[var(--btn-bg-primary)]">Asked</span> Questions
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-11 lg:place-items-center">
+            <div className="grid md:grid-cols-2  gap-x-11 md:place-items-center">
                 <div className="order-2  mt-6 lg:mt-0 lg:col-span-1 lg:order-1">
                     <h2 className="hidden lg:block font-heading font-semibold text-5xl/12 pt-16 pb-11">
                         Frequently{" "}
@@ -84,7 +84,7 @@ const Faq = () => {
                     </div>
                 </div>
 
-                <div className="order-1  lg:col-span-2 lg:order-2">
+                <div className="order-1  lg:order-2">
                     <CommonAccordion items={faqData.map((item) => ({
                         title: item.question,
                         content: item.answer,

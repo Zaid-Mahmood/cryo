@@ -9,35 +9,30 @@ const InfraredFaq = () => {
     ];
     const faqData = [
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "Is infrared sauna comfortable for people who dislike high heat?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Infrared sauna is often more comfortable than a traditional sauna because it heats the body directly. Many clients find the warmth gentle, relaxing and easier to tolerate."
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "What are the main benefits of an infrared sauna session?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Infrared sauna may support relaxation, sweating, circulation and muscle comfort. It is commonly used by clients who want stress relief and recovery support.",
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "Should I hydrate before an infrared sauna session?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Yes, drinking water before and after your infrared sauna session is recommended. Good hydration helps you feel more comfortable and supports the sweating process.",
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "Can I use infrared sauna after exercise?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Yes, many clients use infrared sauna after exercise to relax tight muscles. It can be a good addition to a recovery routine after training or sport.",
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "Where can I book an infrared sauna near me?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
-        },
-        {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
-            answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
-        },
+                "Cryo SubZero offers infrared sauna sessions in Cheltenham, VIC. It is a convenient local option for clients near Bayside, Mentone, Highett and Moorabbin.",
+        }
     ];
     return (
         <div className="px-5 pb-8 md:px-16 md:pb-13">
@@ -45,7 +40,7 @@ const InfraredFaq = () => {
                 Frequently{" "}
                 <span className="text-[var(--btn-bg-primary)]">Asked</span> Questions
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-11 lg:place-items-center">
+            <div className="grid md:grid-cols-2 gap-x-11 lg:place-items-center">
                 <div className="order-2  mt-6 lg:mt-0 lg:col-span-1 lg:order-1">
                     <h2 className="hidden lg:block font-heading font-semibold text-5xl/12 pt-16 pb-11">
                         Frequently{" "}
@@ -63,7 +58,7 @@ const InfraredFaq = () => {
                     </div>
                 </div>
 
-                <div className="order-1  lg:col-span-2 lg:order-2">
+                <div className="order-1 lg:order-2">
                     <CommonAccordion items={faqData.map((item) => ({
                         title: item.question,
                         content: item.answer,

@@ -10,35 +10,30 @@ const HyperBaricFaq = () => {
     ];
     const faqData = [
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "What should I expect inside the hyperbaric chamber?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "You relax inside the chamber while the pressure is gradually adjusted in a controlled setting.The team explains the process beforehand so you feel prepared and comfortable.",
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "Will I feel pressure in my ears during HBOT?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Some clients may feel mild ear pressure, similar to flying in a plane. Swallowing or gently equalising often helps, and staff can guide you if needed.",
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "Is hyperbaric oxygen therapy suitable for recovery?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Hyperbaric oxygen therapy is often used as part of a wellness and recovery routine. It supports oxygen delivery in a pressurised environment, but it is not a replacement for medical care.",
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "Who should check before booking HBOT?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Clients with ear, sinus, lung, heart, pregnancy or complex medical concerns should seek medical advice first. Safety and suitability are important before starting hyperbaric oxygen therapy.",
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "Where can I find a hyperbaric chamber near Cheltenham?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
-        },
-        {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
-            answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
-        },
+                "Cryo SubZero offers hyperbaric chamber sessions in Cheltenham, VIC. It is a local option for clients searching for HBOT near Bayside and Melbourne.",
+        }
     ];
     return (
         <div className="px-5 pb-8 md:px-16 md:pb-13">
@@ -46,7 +41,7 @@ const HyperBaricFaq = () => {
                 Frequently{" "}
                 <span className="text-[var(--btn-bg-primary)]">Asked</span> Questions
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-11 lg:place-items-center">
+            <div className="grid md:grid-cols-2 gap-x-11 lg:place-items-center">
                 <div className="order-2  mt-6 lg:mt-0 lg:col-span-1 lg:order-1">
                     <h2 className="hidden lg:block font-heading font-semibold text-5xl/12 pt-16 pb-11">
                         Frequently{" "}
@@ -64,7 +59,7 @@ const HyperBaricFaq = () => {
                     </div>
                 </div>
 
-                <div className="order-1  lg:col-span-2 lg:order-2">
+                <div className="order-1 lg:order-2">
                     <CommonAccordion items={faqData.map((item) => ({
                         title: item.question,
                         content: item.answer,

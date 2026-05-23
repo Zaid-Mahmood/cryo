@@ -14,6 +14,9 @@ const bodyFont = Inter({
 export const metadata: Metadata = {
   title: "Experience Australia’s Next-Level Cryotherapy and Wellness Centre | Cryo SubZero",
   description: "Australia’s next-level cryotherapy and wellness centre combining innovation, science, and holistic care under one roof.",
+  icons: {
+    icon: 'favicon.png',
+  },
 };
 
 export default function RootLayout({

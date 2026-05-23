@@ -10,35 +10,31 @@ const ScanecaFaq = () => {
     ];
     const faqData = [
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "What does a SCANECA 3D Body Scan show?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "A SCANECA 3D Body Scan can show body measurements, posture insights and body composition data. It helps clients track progress beyond what normal scales can show.",
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: " Is the SCANECA scan suitable for beginners?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Yes, the scan is quick, non-invasive and suitable for beginners. It is helpful if you want a clear starting point for fitness, wellness or body goals.",
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "Why is a 3D body scan better than only using scales?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Scales only show body weight, which does not always reflect real progress. A 3D body scan gives more detail about shape, measurements, posture and body changes.",
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "What should I wear for a SCANECA scan?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Wear fitted activewear so the scan can capture your body shape more accurately. Avoid loose clothing, jackets or bulky layers during the scan.",
         },
         {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
+            question: "Where can I get a 3D body scan near Cheltenham?",
             answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
+                "Cryo SubZero offers SCANECA 3D Body Scan in Cheltenham, VIC. It is a local option for clients tracking fitness, wellness and body composition progress.",
         },
-        {
-            question: "Not sure what to get them? A CryoSubZero gift card lets them choose their own ",
-            answer:
-                "Not sure what to get them? A CryoSubZero gift card lets them choose their own Not sure what to get them? A CryoSubZero gift card lets them choose their own",
-        },
+        
     ];
     return (
         <div className="px-5 pb-8 md:px-16 md:pb-13">
@@ -46,7 +42,7 @@ const ScanecaFaq = () => {
                 Frequently{" "}
                 <span className="text-[var(--btn-bg-primary)]">Asked</span> Questions
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-11 lg:place-items-center">
+            <div className="grid md:grid-cols-2 gap-x-11 lg:place-items-center">
                 <div className="order-2  mt-6 lg:mt-0 lg:col-span-1 lg:order-1">
                     <h2 className="hidden lg:block font-heading font-semibold text-5xl/12 pt-16 pb-11">
                         Frequently{" "}
@@ -64,7 +60,7 @@ const ScanecaFaq = () => {
                     </div>
                 </div>
 
-                <div className="order-1  lg:col-span-2 lg:order-2">
+                <div className="order-1 lg:order-2">
                     <CommonAccordion items={faqData.map((item) => ({
                         title: item.question,
                         content: item.answer,

@@ -11,7 +11,6 @@ import fb from "@/assets/navbar-social-links/fb.png";
 import insta from "@/assets/navbar-social-links/insta.png";
 import tiktok from "@/assets/navbar-social-links/tiktok.png";
 
-
 const navItems = [
   {
     title: "Home",
@@ -243,8 +242,9 @@ const Navbar = () => {
                     {/* MOBILE SERVICES BUTTON */}
                     <button
                       type="button"
-                      onClick={() =>
+                      onClick={() =>{
                         setOpenServicesMobile((prev) => !prev)
+                        }
                       }
                       className={`flex w-full items-center justify-between px-4 py-3 text-base transition ${isServicesActive
                         ? "font-bold text-(--btn-bg-primary)"
@@ -272,9 +272,11 @@ const Navbar = () => {
                             <Link
                               key={serviceIndex}
                               href={service.href}
-                              onClick={() =>
+                              onClick={() =>{
                                 setOpenServicesMobile(false)
+                                setOpenMenu(false)
                               }
+                    }
                               className={`block rounded-2xl px-3 py-2 text-sm font-medium transition ${isActiveLink
                                 ? "bg-slate-100 font-bold text-(--btn-bg-primary)"
                                 : "text-slate-700 hover:bg-white hover:text-slate-950"
@@ -290,6 +292,7 @@ const Navbar = () => {
                 ) : (
                   <Link
                     href={item.href}
+                    onClick={()=>setOpenMenu(false)}
                     className={`block rounded-2xl px-4 py-3 text-base transition font-body ${isActive(item.href)
                       ? "font-bold text-(--btn-bg-primary)"
                       : "text-(--navlink-text-black) hover:text-(--btn-bg-primary)"
