@@ -1,3 +1,5 @@
+"use client"
+import Link from "next/link";
 import Image from "next/image";
 import checkImg from "@/assets/membership-img/check.png";
 import { memberCards } from "./dummyutils";
@@ -52,7 +54,28 @@ const Memberships = () => {
                     <h3 className="font-body text-lg font-semibold text-[var(--btn-bg-black)]">
                       {card.heading}
                     </h3>
-                    <Image src={card.img} alt="info-img" />
+                      <div className="relative group">
+                                          <Image
+                                            src={card.img}
+                                            alt="info-img"
+                                            className="cursor-pointer"
+                                          />
+                    
+                                          {/* Tooltip */}
+                                          <div
+                                            className="absolute left-1/2 top-[140%] -translate-x-1/2 w-[260px] rounded-md border border-[#1DA1F2] bg-[#0B0F19] px-4 py-3 text-xs leading-5 text-white
+                    opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible z-50" >
+                                            Limited membership spots available. Fair-use policy applies.
+                                            Optional partner rates on available on eligible plans.
+                    
+                                            {/* Arrow */}
+                                            <div
+                                              className="absolute left-1/2 top-0 h-3 w-3 -translate-x-1/2 -translate-y-1/2
+                              rotate-45 border-l border-t border-[#1DA1F2] bg-[#0B0F19]"
+                                            />
+                                          </div>
+                                        </div>
+                    {/* <Image src={card.img} alt="info-img" /> */}
                   </div>
 
                   <p className="mt-2 max-w-[280px] font-body text-xs leading-relaxed text-[var(--text-description)]">
@@ -79,12 +102,14 @@ const Memberships = () => {
                 <span className="mb-2 ml-1 text-base font-semibold">/week</span>
               </div>
 
-              <button
-                type="button"
-                className="mt-4 w-full rounded-md bg-[#262626] px-4 py-3 font-body text-sm font-semibold text-white transition hover:bg-black cursor-pointer"
-              >
-                {card.btnText}
-              </button>
+             <Link target="_blank" href={card.href}>
+                <button
+                  type="button"
+                  className="mt-4 w-full rounded-md bg-[#262626] px-4 py-3 font-body text-sm font-semibold text-white transition hover:bg-black cursor-pointer"
+                >
+                  {card.btnText}
+                </button>
+              </Link>
             </div>
 
             <div className="mt-5 font-body">

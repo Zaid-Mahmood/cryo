@@ -17,7 +17,7 @@ const LymphaticPackages = () => {
             image: Img1,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/booking?menu=true&share=true&offerItems=sv%3A25481698&pId=2636491&dppub=true&cartId=1cb79312-c9a5-4f3a-9c62-494fda0b3780",
                 arrow: arrowRight,
             },
         },
@@ -30,7 +30,7 @@ const LymphaticPackages = () => {
             image: Img1,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/paid-plans/details?menu=true&pId=2636491&selected=3227762&share=true&skipFirstStep=true",
                 arrow: arrowRight,
             },
         },
@@ -43,7 +43,7 @@ const LymphaticPackages = () => {
             image: Img1,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/paid-plans/details?menu=true&pId=2636491&selected=3227763&share=true&skipFirstStep=true",
                 arrow: arrowRight,
             },
         },
@@ -172,6 +172,7 @@ const LymphaticPackages = () => {
 
                                         {/* RIGHT SIDE: BUTTON */}
                                         <Link
+                                        target="_blank"
                                             href={review.link.href}
                                             className="flex items-center gap-2 rounded-lg border-2 border-[var(--text-secondary)]  px-4 py-2 text-white text-sm font-medium hover:opacity-90 transition"
                                         >

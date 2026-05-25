@@ -22,7 +22,7 @@ const RedLightTherapy = () => {
                 buttons={[
                     {
                         label: "Book A Session",
-                        href: "#",
+                        href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/all-offer?menu=true&share=true&pId=2636491",
                         variant: "primary",
                     }
                 ]}
@@ -37,10 +37,10 @@ const RedLightTherapy = () => {
             />
             <RedLightPackages />
             <WhyChooseRedLight />
-             <CommonStepText
-        title='What to Expect During Your <span class="text-[var(--btn-bg-primary)]">Session</span>'
-        subtitle="A gentle, non-invasive light therapy that supports recovery, reduces inflammation, and improves skin health. The treatment works passively while you relax under targeted red  light."
-      />
+            <CommonStepText
+                title='What to Expect During Your <span class="text-[var(--btn-bg-primary)]">Session</span>'
+                subtitle="A gentle, non-invasive light therapy that supports recovery, reduces inflammation, and improves skin health. The treatment works passively while you relax under targeted red  light."
+            />
             <CommonStepsWrapper
                 image={middleImg}
                 steps={steps}
@@ -53,7 +53,7 @@ const RedLightTherapy = () => {
                     </>
                 }
                 description="Unlock consistent recovery with flexible membership options designed to help you save more, stay consistent, and get better results over time."
-                href="#"
+                href="/membership"
                 buttonText="Become a Member" />
             <div className="pt-13 lg:pt-26">
                 <RedLightTherapyFaq />

@@ -1,5 +1,5 @@
 import CommonBanner from "@/app/(pages)/(CommonPages)/CommonBanner/CommonBanner";
-import bannerImg from "@/assets/service-drop/hyperbaric-therapy/banner.png";
+import bannerImg from "@/assets/service-drop/iv-infusion/banner.png";
 import CommonText from "@/app/(pages)/(CommonPages)/CommonText/CommonText";
 import IVInfusionPackages from "./IVInfusionPackages/IVInfusionPackages";
 import WhyIVInfusionChoose from "./WhyIVInfusionChoose/WhyIVInfusionChoose";
@@ -23,7 +23,7 @@ const IVInfusion = () => {
                 buttons={[
                     {
                         label: "Book A Session",
-                        href: "#",
+                        href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/all-offer?menu=true&share=true&pId=2636491",
                         variant: "primary",
                     }
                 ]}
@@ -52,7 +52,7 @@ const IVInfusion = () => {
                     </>
                 }
                 description="Unlock consistent recovery with flexible membership options designed to help you save more, stay consistent, and get better results over time."
-                href="#"
+                href="/membership"
                 buttonText="Become a Member" />
                   <div className="pt-13 lg:pt-26">
                 <IVInfusionFaq />

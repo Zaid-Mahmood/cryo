@@ -20,7 +20,7 @@ const Packages = () => {
             image: Img1,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/booking?menu=true&share=true&offerItems=sv%3A24458085&pId=2636491&dppub=true&cartId=3868c712-2ebf-4e04-b131-fab5021111c5",
                 arrow: arrowRight,
             },
         },
@@ -34,7 +34,7 @@ const Packages = () => {
             image: Img2,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/paid-plans/details?menu=true&pId=2636491&selected=3227747&share=true&skipFirstStep=true",
                 arrow: arrowRight,
             },
 
@@ -49,7 +49,7 @@ const Packages = () => {
             image: Img3,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/paid-plans/details?menu=true&pId=2636491&selected=3227749&share=true&skipFirstStep=true",
                 arrow: arrowRight,
             },
         },
@@ -179,6 +179,7 @@ const Packages = () => {
                                         {/* RIGHT SIDE: BUTTON */}
                                         <Link
                                             href={review.link.href}
+                                            target="_blank"
                                             className="flex items-center gap-2 rounded-lg border-2 border-[var(--text-secondary)]  px-4 py-2 text-white text-sm font-medium hover:opacity-90 transition"
                                         >
                                             <span className="text-[var(--btn-bg-black)] font-semibold text-base">{review.link.text}</span>

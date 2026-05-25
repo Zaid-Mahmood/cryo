@@ -19,7 +19,7 @@ const IVInfusionPackages = () => {
             image: Img1,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/booking?menu=true&share=true&offerItems=sv%3A24771016&pId=2636491&dppub=true&employeeId=5023580&cartId=89005943-73ae-4af8-80d9-d92db7701166",
                 arrow: arrowRight,
             },
         },
@@ -32,7 +32,7 @@ const IVInfusionPackages = () => {
             image: Img2,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/booking?menu=true&share=true&offerItems=sv%3A24770971&pId=2636491&dppub=true&employeeId=5023580&cartId=79d1db25-631a-47b9-b021-44c25887e22a",
                 arrow: arrowRight,
             },
 
@@ -41,12 +41,12 @@ const IVInfusionPackages = () => {
             cardHeading: "Comprehensive Nutrient IV",
             cardDescription:
                 "Reduce inflammation, speed up recovery, and support muscle repair with advanced cold therapy.",
-            price: "229",
+            price: "299",
             // seeion: 10,
             image: Img3,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/booking?menu=true&share=true&offerItems=sv%3A24770924&pId=2636491&dppub=true&employeeId=5023580&cartId=aacf0fcc-a33b-458d-913a-5342aebc10ef",
                 arrow: arrowRight,
             },
         },
@@ -175,6 +175,7 @@ const IVInfusionPackages = () => {
 
                                         {/* RIGHT SIDE: BUTTON */}
                                         <Link
+                                            target="_blank"
                                             href={review.link.href}
                                             className="flex items-center gap-2 rounded-lg border-2 border-[var(--text-secondary)]  px-4 py-2 text-white text-sm font-medium hover:opacity-90 transition"
                                         >

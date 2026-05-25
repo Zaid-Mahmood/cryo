@@ -65,6 +65,7 @@ const FamilyPackageCard = ({ item, heading }: any) => {
 
                     </div>
                     <Link
+                        target="_blank"
                         href={item.linkhref}
                         className="flex items-center justify-center md:justify-between gap-2 rounded-lg  px-4 py-2 text-white text-sm font-medium hover:opacity-90 transition mt-6 w-full md:max-w-[156px] bg-[#2680D9] hover:[var(--hover-bg-primary)]"
                     >

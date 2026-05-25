@@ -13,12 +13,12 @@ const RedLightPackages = () => {
             cardDescription:
                 "Reduce inflammation, speed up recovery, and support muscle repair with advanced cold therapy.",
 
-            price: "70",
+            price: "45",
             seeion: 1,
             image: Img3,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/booking?menu=true&pId=2636491&share=true&offerItems=sv%3A24458400&dppub=true&cartId=7635e733-5edc-4204-b2b9-39be80c9ba9b",
                 arrow: arrowRight,
             },
         },
@@ -27,12 +27,12 @@ const RedLightPackages = () => {
             cardDescription:
                 "Reduce inflammation, speed up recovery, and support muscle repair with advanced cold therapy.",
 
-            price: "325",
+            price: "200",
             seeion: 5,
             image: Img3,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/paid-plans/details?menu=true&pId=2636491&selected=3227756&share=true&skipFirstStep=true",
                 arrow: arrowRight,
             },
 
@@ -42,12 +42,12 @@ const RedLightPackages = () => {
             cardDescription:
                 "Reduce inflammation, speed up recovery, and support muscle repair with advanced cold therapy.",
 
-            price: "600",
+            price: "350",
             seeion: 10,
             image: Img3,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/paid-plans/details?menu=true&pId=2636491&selected=3227757&share=true&skipFirstStep=true",
                 arrow: arrowRight,
             },
         },
@@ -176,6 +176,7 @@ const RedLightPackages = () => {
 
                                         {/* RIGHT SIDE: BUTTON */}
                                         <Link
+                                        target="_blank"
                                             href={review.link.href}
                                             className="flex items-center gap-2 rounded-lg border-2 border-[var(--text-secondary)]  px-4 py-2 text-white text-sm font-medium hover:opacity-90 transition"
                                         >

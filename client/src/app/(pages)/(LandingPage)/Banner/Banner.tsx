@@ -12,17 +12,17 @@ const Banner = () => {
       buttons={[
         {
           label: "Get Started",
-          href: "#",
+          href: "#services",
           variant: "primary",
         },
         {
           label: "Explore Memberships",
-          href: "#",
+          href: "/membership",
           variant: "secondary",
         },
       ]}
       height="h-screen"
-    />
+    />  
   );
 };
 

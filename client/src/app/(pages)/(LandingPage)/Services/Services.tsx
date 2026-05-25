@@ -5,23 +5,29 @@ import Link from "next/link";
 import Img3 from "@/assets/services/img1.png";
 import Img2 from "@/assets/services/img2.png";
 import Img1 from "@/assets/services/img3.png";
+import Img4 from "@/assets/service-drop/infrared-suana/infrared-suana.png";
+import img5 from "@/assets/service-drop/red-light-therapy/banner.png";
+import img6 from "@/assets/service-drop/salt-therapy/banner.png";
+import img7 from "@/assets/service-drop/local-cryotherapy/banner.png";
+import img8 from "@/assets/service-drop/lymphatic-drainage/banner.png";
+import img9 from "@/assets/service-drop/scaneca-body-scan/banner.png";
 import leftArrow from "@/assets/services/left-arrow.png";
 import rightArrow from "@/assets/services/right-arrow.png";
 import linkArrow from "@/assets/services/link-arrow.png";
 
 const Services = () => {
     const [isMobile, setIsMobile] = useState<boolean>(false);
-   const touchStartX = useRef(0);
+    const touchStartX = useRef(0);
     const touchEndX = useRef(0);
-   
+
     const reviews = [
         {
             cardHeading: "Whole Body Cryotherapy",
             cardDescription:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+                "A short, controlled exposure to subzero temperatures (up to -115°C) that stimulates circulation, reduces inflammation, and supports faster recovery. Step into our advanced chamber for a safe, 2–3 minute session designed to help your body recover and perform better.",
             link: {
                 text: "Learn More",
-                href: "#",
+                href: "/services/whole-body-cryotherapy",
                 arrow: linkArrow,
             },
             image: Img1,
@@ -29,10 +35,10 @@ const Services = () => {
         {
             cardHeading: "Hyperbaric Chamber",
             cardDescription:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+                "Hyperbaric Oxygen Therapy (HBOT) involves breathing oxygen in a pressurised chamber, allowing your body to absorb higher levels of oxygen. This increased oxygen delivery supports recovery, healing, and overall wellness.",
             link: {
                 text: "Learn More",
-                href: "#",
+                href: "/services/hyperbaric-oxygen-therapy",
                 arrow: linkArrow,
             },
             image: Img2,
@@ -40,35 +46,76 @@ const Services = () => {
         {
             cardHeading: "IV Infusion",
             cardDescription:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+                "At Cryo SubZero, we offer IV nutrient infusions in a calm, professional setting, tailored to support hydration, nutritional balance, and overall well-being. Each treatment is delivered by qualified healthcare professionals following a detailed consultation.",
             link: {
                 text: "Learn More",
-                href: "#",
+                href: "/services/iv-infusion",
                 arrow: linkArrow,
             },
             image: Img3,
         },
         {
-            cardHeading: "Whole Body Cryotherapy",
+            cardHeading: "Infrared Sauna",
             cardDescription:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+                "Unlike traditional saunas that heat the air around you, infrared saunas use light to warm your body directly. This deep-penetrating heat delivers the same benefits at a lower, more comfortable temperature, making it effective for detox, recovery, and relaxation.",
             link: {
                 text: "Learn More",
-                href: "#",
+                href: "/services/infrared-sauna",
                 arrow: linkArrow,
             },
-            image: Img1,
+            image: Img4,
         },
         {
-            cardHeading: "Hyperbaric Chamber",
+            cardHeading: "Red Light Therapy",
             cardDescription:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+                "Uses low-level red and near-infrared light to stimulate cellular activity and boost energy production. This light penetrates the skin to support repair, accelerate recovery, and promote visible improvements in skin health.",
             link: {
                 text: "Learn More",
-                href: "#",
+                href: "/services/red-light-therapy",
                 arrow: linkArrow,
             },
-            image: Img2,
+            image: img5,
+        },
+        {
+            cardHeading: "Salt Therapy",
+            cardDescription:
+                "Salt Therapy, also known as halotherapy, recreates the microclimate of natural salt caves by dispersing fine salt particles into the air. These particles are inhaled into the lungs and absorbed by the skin, helping support breathing, skin health, and overall wellbeing",
+            link: {
+                text: "Learn More",
+                href: "/services/red-light-therapy",
+                arrow: linkArrow,
+            },
+            image: img6,
+        }, {
+            cardHeading: "Local Cryotherapy",
+            cardDescription:
+                "Local Cryotherapy uses a precision handheld device to apply controlled cold air directly to targeted areas such as joints, muscles, or skin. This focused treatment helps reduce inflammation, relieve discomfort, and support faster recovery.",
+            link: {
+                text: "Learn More",
+                href: "/services/local-cryotherapy",
+                arrow: linkArrow,
+            },
+            image: img7,
+        }, {
+            cardHeading: "Lymphatic Drainage",
+            cardDescription:
+                "Lymphatic drainage uses gentle compression therapy to stimulate the movement of lymph fluid throughout the body. This helps support circulation, reduce swelling, and encourage the removal of excess fluid and waste.",
+            link: {
+                text: "Learn More",
+                href: "/services/lymphatic-drainage",
+                arrow: linkArrow,
+            },
+            image: img8,
+        }, {
+            cardHeading: "SCANECA 3D Body Scan",
+            cardDescription:
+                "A data-driven assessment designed to give you accurate insights into your body, posture, and progress. Experience precise measurements and visual tracking that help you understand changes, improve performance, and stay on track.",
+            link: {
+                text: "Learn More",
+                href: "/services/scaneca-body-scan",
+                arrow: linkArrow,
+            },
+            image: img9,
         },
     ];
 
@@ -97,7 +144,7 @@ const Services = () => {
             setIndex((prev) => prev - 1);
         }
     };
-  const handleTouchStart = (e: React.TouchEvent) => {
+    const handleTouchStart = (e: React.TouchEvent) => {
         touchStartX.current = e.changedTouches[0].screenX;
     };
 
@@ -113,7 +160,8 @@ const Services = () => {
         }
     };
     return (
-        <div className="lg:pb-13 pb-8">
+        <section  id = "services" >
+        <div  className="lg:pb-13 pb-8">
             <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-16 gap-4">
                 <h2 className="font-body md:font-heading font-bold text-2xl md:text-3xl">
                     Our Services
@@ -172,14 +220,13 @@ const Services = () => {
                             key={id}
                             className="w-[90%] md:w-[30%] flex-shrink-0"
                         >
-                            <div className="h-full">
-                                <div>
+                            <div>
+                                <div className="relative w-full aspect-[4/3] overflow-hidden rounded-xl">
                                     <Image
                                         src={review.image}
                                         alt="img-name"
-                                        width={0}
-                                        height={0}
-                                        className="w-full rounded-xl"
+                                        fill
+                                        className="object-cover"
                                         priority
                                     />
                                 </div>
@@ -220,8 +267,8 @@ const Services = () => {
                         onClick={prev}
                         disabled={index === 0}
                         className={`h-9 w-9 flex items-center justify-center rounded-full bg-[#1292E5] ${index === 0
-                                ? "opacity-50 cursor-not-allowed"
-                                : "cursor-pointer"
+                            ? "opacity-50 cursor-not-allowed"
+                            : "cursor-pointer"
                             }`}
                     >
                         <Image
@@ -237,8 +284,8 @@ const Services = () => {
                         onClick={next}
                         disabled={index >= reviews.length - (isMobile ? 1 : 3)}
                         className={`h-9 w-9 flex items-center justify-center rounded-full bg-[#1292E5] ${index >= reviews.length - (isMobile ? 1 : 3)
-                                ? "opacity-50 cursor-not-allowed"
-                                : "cursor-pointer"
+                            ? "opacity-50 cursor-not-allowed"
+                            : "cursor-pointer"
                             }`}
                     >
                         <Image
@@ -252,6 +299,7 @@ const Services = () => {
                 </div>
             </div>
         </div>
+        </section>
     );
 };
 

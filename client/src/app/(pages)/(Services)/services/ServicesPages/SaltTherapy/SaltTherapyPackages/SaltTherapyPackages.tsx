@@ -19,7 +19,7 @@ const SaltTherapyPackages = () => {
             image: Img3,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/booking?menu=true&share=true&offerItems=sv%3A24458245&pId=2636491&dppub=true",
                 arrow: arrowRight,
             },
         },
@@ -33,7 +33,7 @@ const SaltTherapyPackages = () => {
             image: Img3,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/paid-plans/details?menu=true&pId=2636491&selected=3227758&share=true&skipFirstStep=true",
                 arrow: arrowRight,
             },
 
@@ -48,7 +48,7 @@ const SaltTherapyPackages = () => {
             image: Img3,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/paid-plans/details?menu=true&pId=2636491&selected=3227759&share=true&skipFirstStep=true",
                 arrow: arrowRight,
             },
         },
@@ -177,6 +177,7 @@ const SaltTherapyPackages = () => {
 
                                         {/* RIGHT SIDE: BUTTON */}
                                         <Link
+                                        target="_blank"
                                             href={review.link.href}
                                             className="flex items-center gap-2 rounded-lg border-2 border-[var(--text-secondary)]  px-4 py-2 text-white text-sm font-medium hover:opacity-90 transition"
                                         >

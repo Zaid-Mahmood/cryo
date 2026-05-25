@@ -28,7 +28,8 @@ const GiftCardText = () => {
                     </p>
 
                     <Link
-                        href="#"
+                    target="_blank"
+                        href="https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/gift-cards?share=true&pId=2636491&menu=true"
                         className="w-full md:w-[200px] inline-flex items-center justify-center gap-2 rounded-lg bg-[var(--btn-bg-primary)] px-10 py-4 font-body text-base font-semibold text-white transition hover:bg-[var(--hover-bg-primary)]"
                     >
                         <span>Send a Gift</span>

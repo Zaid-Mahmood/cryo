@@ -1,3 +1,5 @@
+"use client"
+import Link from "next/link";
 import CommonMembershipPage from "@/app/(pages)/(CommonPages)/CommonMembershipPage/CommonMembershipPage"
 import { memberPkgs } from "./dummyutils";
 import Image from "next/image";
@@ -96,12 +98,14 @@ opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-ho
                 <span className="mb-2 ml-1 text-base font-semibold">/week</span>
               </div>
 
-              <button
-                type="button"
-                className="mt-4 w-full rounded-md bg-[#262626] px-4 py-3 font-body text-sm font-semibold text-white transition hover:bg-black cursor-pointer"
-              >
-                {card.btnText}
-              </button>
+              <Link target="_blank" href={card.href}>
+                <button
+                  type="button"
+                  className="mt-4 w-full rounded-md bg-[#262626] px-4 py-3 font-body text-sm font-semibold text-white transition hover:bg-black cursor-pointer"
+                >
+                  {card.btnText}
+                </button>
+              </Link>
             </div>
 
             <div className="mt-5 font-body">

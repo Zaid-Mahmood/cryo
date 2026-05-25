@@ -20,7 +20,7 @@ const HyperBaricPackages = () => {
             image: Img1,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/booking?menu=true&share=true&offerItems=sv%3A24458277&pId=2636491&dppub=true&cartId=99c54a48-bdd8-44d3-8270-da54f552679f",
                 arrow: arrowRight,
             },
         },
@@ -34,7 +34,7 @@ const HyperBaricPackages = () => {
             image: Img2,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/paid-plans/details?menu=true&pId=2636491&selected=3227760&share=true&skipFirstStep=true",
                 arrow: arrowRight,
             },
 
@@ -49,7 +49,7 @@ const HyperBaricPackages = () => {
             image: Img3,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/paid-plans/details?menu=true&pId=2636491&selected=3227761&share=true&skipFirstStep=true",
                 arrow: arrowRight,
             },
         },
@@ -178,6 +178,7 @@ const HyperBaricPackages = () => {
 
                                         {/* RIGHT SIDE: BUTTON */}
                                         <Link
+                                        target="_blank"
                                             href={review.link.href}
                                             className="flex items-center gap-2 rounded-lg border-2 border-[var(--text-secondary)]  px-4 py-2 text-white text-sm font-medium hover:opacity-90 transition"
                                         >

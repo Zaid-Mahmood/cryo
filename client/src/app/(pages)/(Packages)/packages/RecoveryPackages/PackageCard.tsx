@@ -3,6 +3,7 @@ import Link from "next/link";
 import arrowRight from "@/assets/service-drop/body-cryo/ArrowRight.png";
 
 const PackageCard = ({ item }: any) => {
+
     return (
         <div className="border-2  border border-2 border-[#D9D9D9] rounded-2xl p-2">
         <div className="rounded-2xl overflow-hidden bg-white">
@@ -61,6 +62,7 @@ const PackageCard = ({ item }: any) => {
 
                     {/* RIGHT SIDE: BUTTON */}
                     <Link
+                    target="_blank"
                         href={item.linkhref}
                         className="flex items-center gap-2 rounded-lg border-2 border-[var(--text-secondary)]  px-4 py-2 text-white text-sm font-medium hover:opacity-90 transition"
                     >

@@ -22,7 +22,7 @@ const WholeBodyCryo = () => {
         buttons={[
           {
             label: "Book A Session",
-            href: "#",
+            href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/all-offer?menu=true&share=true&pId=2636491",
             variant: "primary",
           }
         ]}
@@ -54,7 +54,7 @@ const WholeBodyCryo = () => {
           </>
         }
         description="Unlock consistent recovery with flexible membership options designed to help you save more, stay consistent, and get better results over time."
-        href="#"
+        href="/membership"
         buttonText="Become a Member" />
       <div className="pt-13 lg:pt-26">
         <Faq />

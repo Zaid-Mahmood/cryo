@@ -17,7 +17,7 @@ const LocalCryoPackages = () => {
             image: Img1,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/booking?menu=true&share=true&offerItems=sv%3A25481652&pId=2636491&dppub=true&cartId=a13708e8-6a0d-4ca9-9e7d-1245af6c62ba",
                 arrow: arrowRight,
             },
         },
@@ -30,7 +30,7 @@ const LocalCryoPackages = () => {
             image: Img1,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/paid-plans/details?menu=true&pId=2636491&selected=3227764&share=true&skipFirstStep=true",
                 arrow: arrowRight,
             },
         },
@@ -43,7 +43,7 @@ const LocalCryoPackages = () => {
             image: Img1,
             link: {
                 text: "Book Now",
-                href: "#",
+                href: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/paid-plans/details?menu=true&pId=2636491&selected=3227765&share=true&skipFirstStep=true",
                 arrow: arrowRight,
             },
         },
@@ -173,6 +173,7 @@ const LocalCryoPackages = () => {
                                         {/* RIGHT SIDE: BUTTON */}
                                         <Link
                                             href={review.link.href}
+                                            target="_blank"
                                             className="flex items-center gap-2 rounded-lg border-2 border-[var(--text-secondary)]  px-4 py-2 text-white text-sm font-medium hover:opacity-90 transition"
                                         >
                                             <span className="text-[var(--btn-bg-black)] font-semibold text-base">{review.link.text}</span>
