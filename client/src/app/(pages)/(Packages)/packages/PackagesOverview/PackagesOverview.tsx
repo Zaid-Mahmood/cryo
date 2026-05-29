@@ -13,7 +13,7 @@ const PackagesOverview = () => {
                 price={"A$49"}
                 duration="30mins"
                 buttonText="Book Your First Experience"
-                buttonHref="#"
+                buttonHref="https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/booking?menu=true&share=true&offerItems=sv%3A26798242&pId=2636491&dppub=true&cartId=827c1796-afdf-4bd6-8335-f3b218e02c53"
             />
         </div>
     )

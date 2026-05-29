@@ -86,7 +86,7 @@ export const togetherPackages = [
                 image: singleShared1,
                 duration: "5mins",
                 linkName: "Book Now",
-                linkhref: "#"
+                linkhref: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/booking?menu=true&share=true&offerItems=sv%3A26053357&pId=2636491&dppub=true&cartId=cc1b477b-1cd6-411d-a4f3-aa43eafb8f6b"
             },
             {
                 id: 2,
@@ -95,7 +95,7 @@ export const togetherPackages = [
                 image: singleShared2,
                 duration: "1hour",
                 linkName: "Book Now",
-                linkhref: "#"
+                linkhref: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/booking?menu=true&share=true&offerItems=sv%3A26053446&pId=2636491&dppub=true&cartId=db94a611-7c65-485b-8352-0d5a0239202b"
             },
             {
                 id: 3,
@@ -104,7 +104,7 @@ export const togetherPackages = [
                 image: singleShared3,
                 duration: "30mins",
                 linkName: "Book Now",
-                linkhref: "#"
+                linkhref: "https://www.fresha.com/a/cryo-subzero-cheltenham-284-bay-road-x216yymn/booking?menu=true&share=true&offerItems=sv%3A26053389&pId=2636491&dppub=true&cartId=26b8938f-23ee-4225-b71a-4380d8a3c3de"
             }
         ]
     },

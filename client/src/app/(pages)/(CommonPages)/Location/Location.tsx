@@ -1,16 +1,19 @@
+"use client"
 import Image from "next/image";
 import locationImg from "@/assets/location-img/mail.png";
 import map from "@/assets/location-img/map-pin.png";
-
+import Link from "next/link";
 const Location = () => {
   const contactAddress = [
     {
       img: locationImg,
       heading: "Contact",
+      href : "mailto:info@cryosubzero.com" ,
       info: "info@cryosubzero.com",
     },
     {
       img: map,
+      href : "https://www.google.com/maps?q=Level%201,%20284%20Bay%20Road,%20Cheltenham%20VIC%203192" ,
       heading: "Address",
       info: "Level 1, 284 Bay Road, Cheltenham VIC 3192",
     },
@@ -53,9 +56,9 @@ const Location = () => {
                 </h3>
               </div>
 
-              <p className="pt-1 font-body text-base text-[var(--text-description)]">
+              <Link target="_blank" href = {item.href} className="cursor-pointer pt-1 font-body text-base text-[var(--text-description)]">
                 {item.info}
-              </p>
+              </Link>
             </div>
           ))}
         </div>
@@ -95,9 +98,9 @@ const Location = () => {
                 </h3>
               </div>
 
-              <p className="pt-1 font-body text-base text-[var(--text-description)]">
+              <Link target="_blank" href = {item.href} className="cursor-pointer pt-1 font-body text-base text-[var(--text-description)]">
                 {item.info}
-              </p>
+              </Link>
             </div>
           ))}
         </div>
@@ -135,9 +138,9 @@ const Location = () => {
                 </h3>
               </div>
 
-              <p className="pt-1 font-body text-sm text-[var(--text-description)]">
+              <Link target="_blank" href = {item.href} className="cursor-pointer pt-1 font-body text-sm text-[var(--text-description)]">
                 {item.info}
-              </p>
+              </Link>
             </div>
           ))}
         </div>

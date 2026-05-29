@@ -56,6 +56,7 @@ const PackagesAdWrapper = ({
 
           <Link
             href={buttonHref}
+            target="_blank"
             className="justify-center inline-flex w-full md:w-fit items-center gap-2 rounded-lg bg-[var(--btn-bg-primary)] px-6 py-4 font-body md:text-base text-sm font-semibold text-white transition hover:bg-[var(--hover-bg-primary)]"
           >
             {buttonText}

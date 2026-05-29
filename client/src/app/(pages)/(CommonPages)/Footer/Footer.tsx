@@ -156,7 +156,7 @@ const Footer = () => {
                         </div>
                         <button
                             type="submit"
-                            className="sm:w-auto h-12 rounded-full bg-[#008FE8] px-2 sm:px-8 font-body text-sm font-semibold text-white transition hover:bg-[#0078C7]"
+                            className="sm:w-auto h-12 rounded-full bg-[#008FE8] px-2 sm:px-8 font-body text-sm font-semibold text-white transition hover:bg-[#0078C7] cursor-pointer"
                         >
                             Subscribe
                         </button>
